@@ -39,7 +39,7 @@ public class OpenNewAccount extends EdgeStart {
 
         Thread.sleep(1000);
 
-        //Asserting that checking account was successfully opened
+        //Asserting that the Checking account was successfully opened
 
         WebElement successfullyOpenChecking = driver.findElement(By.xpath("//*[@id=\"rightPanel\"]/div/div/p[1]"));
         String checkingOpened = successfullyOpenChecking.getText();
@@ -63,7 +63,7 @@ public class OpenNewAccount extends EdgeStart {
         Thread.sleep(1000);
 
 
-        //Asserting that checking account was successfully opened
+        //Asserting that Savings account was successfully opened
 
         WebElement successfullyOpenSavings = driver.findElement(By.xpath(
                 "//*[@id=\"rightPanel\"]/div/div/p[1]"));

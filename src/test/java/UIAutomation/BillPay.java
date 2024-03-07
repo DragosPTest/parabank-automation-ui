@@ -41,7 +41,7 @@ public class BillPay extends EdgeStart {
     @Test
 
     /*
-    Given I successfully sent a bill payment
+    Given I sent a bill payment
     When I will check the success UI message
     Then I should see that the BillPayment was sent to RandomDetails
     And I should see that the amount that was sent was 100
@@ -78,6 +78,8 @@ public class BillPay extends EdgeStart {
         int numericAmount = Integer.parseInt(parseAmount.substring(0, 3)); // Extract only the first 3 digits
         Assert.assertEquals(100, numericAmount);
         System.out.println("The amount sent is: " + numericAmount);
+
+        Thread.sleep(1000);
 
 
         //Asserting that the account from which the money were withdrawn is the correct one

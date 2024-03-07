@@ -68,12 +68,12 @@ public class Register extends EdgeStart {
                 registrationDetails.sendKeys("1934124566");
             } else if (sendDetails == 10) {
                 registrationDetails.sendKeys(generatedUserName);
-                System.out.println("The username is:" + generatedUserName);
+                System.out.println("Username: " + generatedUserName);
             } else if (sendDetails == 11) {
                 registrationDetails.sendKeys(generatedPassword);
             } else if (sendDetails == 12) {
                 registrationDetails.sendKeys(generatedPassword);
-                System.out.println("The password is:" +generatedPassword);
+                System.out.println("Password: " +generatedPassword);
             } else if (sendDetails == 13) {
                 registrationDetails.click();
             }
@@ -83,9 +83,12 @@ public class Register extends EdgeStart {
         WebElement registrationConfirmation = driver.findElement(By.xpath(
                 "//*[@id=\"rightPanel\"]/p"));
         String successfulRegistrationText = registrationConfirmation.getText();
-        System.out.println("Account creation message:" + successfulRegistrationText);
+        System.out.println("Account creation message: " + successfulRegistrationText);
         Assert.assertEquals("Your account was created successfully. You are now logged in.",
                 successfulRegistrationText);
+
+
+        //Test
 
 
     }

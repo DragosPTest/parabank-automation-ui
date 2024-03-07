@@ -30,10 +30,10 @@ public class LoginUtils extends EdgeStart {
             WebElement loginDetails = driver.findElement(By.xpath("//*[@id=\"loginPanel\"]/form/div[" + sendDetails + "]/input"));
             if (sendDetails == 1) {
                 loginDetails.sendKeys(username);
-                System.out.println("The user name is:" + username);
+                System.out.println("Username :" + username);
             } else if (sendDetails == 2) {
                 loginDetails.sendKeys(password);
-                System.out.println("The password is:" + password);
+                System.out.println("Password :" + password);
             } else if (sendDetails == 3) ;
             loginDetails.click();
         }
