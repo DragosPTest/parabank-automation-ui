@@ -88,7 +88,7 @@ public class Register extends EdgeStart {
                 successfulRegistrationText);
 
 
-        //Test
+        //Test345
 
 
     }
